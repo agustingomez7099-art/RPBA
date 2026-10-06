@@ -1,0 +1,255 @@
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+		
+		
+	<link rel="shortcut icon" href="https://servicios.rpba.gob.ar/images/iconos/favicon2020.ico"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-control" content="no-cache"/>
+<!--<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />-->
+<meta http-equiv="Pragma" content="no-cache" />
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="es-AR,es"/>
+<link rel="stylesheet" type="text/css" media="print" href='https://servicios.rpba.gob.ar/style/comun/styleServiciosWeb2011Print.min.css' />
+<link rel="stylesheet" type="text/css" media="screen" href='https://servicios.rpba.gob.ar/style/comun/SiteMesh.php?decorator=identity' />
+<style type="text/css">
+#toolbar1{background-color: rgba(51,51,51,0.52);color:#FFF;height:45px;}
+#toolbar1 ul{margin:0;padding: 0;list-style: none;}
+#toolbar1 li{display: inline;margin: 0 0 0 0;padding: 0;text-transform:uppercase;}
+#toolbar1 a{float: left;display: block;color: #FFFFFF;text-decoration: none;margin: 0 0 0 0;padding: 10px 10px;}
+#toolbar1 a:hover{background-color:rgba(51,51,51,0.42)}
+</style>
+
+<script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery-1.12.4.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery-ui-1.10.4.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/imprimir.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/formateo.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.formrestrict.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.alphanumeric.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.multiselect.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.ui.datepicker-es.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.datepicker-rango.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.validate.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.validate.messages_es_AR.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.hotkeys.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.numeric.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.chosen.min.js'></script><script type='text/javascript' src='https://servicios.rpba.gob.ar//script/comun/jquery.tablesorter.min.js'></script><script type="text/javascript">
+	function alpha (value, element) {
+    	return this.optional(element) || value == value.match(/^[a-zA-Z\sñÑáãâäàéêëèíîïìóõôöòúûüù´\']+$/);
+    	// --or leave a space here ^^
+	}
+	function teclasbloqueadas( event ){
+		if (!(document===event.target)){
+			return false;
+		}
+	}
+	$.validator.addMethod("alpha", alpha,'Ingrese letras solamente' );
+	
+	function isEmpty( el ){
+      return !$.trim(el.html())
+	}
+	$(document).ready(function() {
+		if (isEmpty($('.tituloSeccion'))) {
+			$('.tituloSeccion').addClass('malUsado');
+		}
+		$( "form" ).submit(function (event){
+			setTimeout(function(){
+					 var form=event.currentTarget;
+					if (!$(form).children("[aria-invalid=true]")){
+						$('body').loader();
+					}
+				}, 1000,event);
+		});
+		$("form").bind("invalid-form.validate", function() {
+			$('body').loader().close();
+		});
+		$( "a" ).click(function( event ) {
+			if (!(
+					$(this).hasClass('ui-button') 
+					||
+					($(this).attr('target')=='_blank')
+					|| 
+					(!$(this).attr('target')) 
+					|| 
+					($(this).attr('href')=='#')
+					||
+					(event.which == 2)
+				))
+					{
+					setTimeout(function(){
+						$('body').loader();
+					}, 1000);
+					}
+				});
+			});
+</script>
+	<script type="text/javascript" src="/signature/StaticJavascript.jsp"></script>
+	<title>Consulta por hash :: RPBA</title>
+	
+
+<meta name="volver" content='blob:https://base64.dev/47452ae6-d2c7-437e-954c-9c3fd263e9d1'/>
+<meta name="idAplicacion" content='36'/>
+   <SCRIPT language=Javascript>
+
+      function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+  
+   </SCRIPT>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <style>
+        #pdfViewer {
+            width: 100%;
+            height: 600px;
+            overflow: auto;
+        }
+        
+            #menud {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        #menud button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #menud button:hover {
+            background-color: #777;
+        }
+        #pdfViewer {
+            padding: 20px;
+        }
+        .page {
+            margin-bottom: 20px;
+        }
+    </style>
+    </style>
+
+	<link rel="stylesheet" href="/signature/struts/rpba/styles.css" type="text/css"/>
+<script src="/signature/struts/utils.js" type="text/javascript"></script>
+</head>
+<body onload="" onunload="" id="">
+
+<div id="contenedor">
+		<div id="title">
+			
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+		
+	<div style="background-color: #009aae;">
+
+<!--<a href="https://www.ec.gba.gov.ar">-->
+<a href="https://www.gba.gob.ar/hacienda_y_finanzas">
+		<img src='https://servicios.rpba.gob.ar/images/comun/logo_gba_footer_blanco.png' alt="Ministerio de Econom&iacute;a de la Provincia de Buenos Aires" style="border:0px;height:95px;margin-left:10px"/>
+</a>
+</div>
+<TABLE id="toolbar1" width="100%">
+	<tr>
+		<td>
+			<ul>
+				<li><a title="Inicio" href='/index.php'>INICIO</a></li>
+				<!--<li><a title='Autoridades' href='http://www.ec.gba.gov.ar/institucional/autoridades.php'>AUTORIDADES</a></li>
+				<li><a title='Organigrama' href='http://www.ec.gba.gov.ar/institucional/organigrama.php'>ORGANIGRAMA</a></li>
+				<li><a title='Prensa' href='http://www.ec.gba.gov.ar/prensa/index.php'>PRENSA</a></li>
+				<li><a title='Links' href='index.php?id=links'>LINKS</a></li>
+				<li><a title='Contacto' href='/index.php?id=contactos'>CONTACTO</a></li> -->
+				<li><a title='Gobierno de la Provincia de Buenos Aires' target="_blank" href='http://www.gba.gov.ar'>PORTAL DE LA PROVINCIA</a></li>
+			</ul>
+		</td>
+		<TD width="26%" style="text-align: right;">
+			<FONT color="#fdfdfd" size="2" face="Tahoma">
+				S&#225;bado, 3 de Octubre de 2026								
+			</font>
+		</td>
+	</tr>
+</table>
+
+
+		</div>
+		
+			<div id="menu">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<div id="menu_hor_izq">
+	
+		<a href="https://viewscreen.githubusercontent.com/view/pdf?browser=chrome&bypass_fastly=true&color_mode=auto&commit=eff04cfd779c06a24e6c7ffe221532d5592a3caf&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6167757374696e676f6d657a373039392d6172742f525042412f656666303463666437373963303661323465366337666665323231353332643535393261336361662f3133305f36303833385f34353439383431332e706466&link_underline_enabled=true&logged_in=true&nwo=agustingomez7099-art%2FRPBA&path=130_60838_45498413.pdf&platform=windows&repository_id=1403792289&repository_type=Repository&version=154#9448be3d-73e9-4b34-b976-73a76779f746" title="Devolucion de documentos firmados a partir de una hash">ConHash</a>
+		 
+	
+</div>
+<div id="menu_hor_der">
+  <a href="https://viewscreen.githubusercontent.com/view/pdf?browser=chrome&bypass_fastly=true&color_mode=auto&commit=eff04cfd779c06a24e6c7ffe221532d5592a3caf&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6167757374696e676f6d657a373039392d6172742f525042412f656666303463666437373963303661323465366337666665323231353332643535393261336361662f3133305f36303833385f34353439383431332e706466&link_underline_enabled=true&logged_in=true&nwo=agustingomez7099-art%2FRPBA&path=130_60838_45498413.pdf&platform=windows&repository_id=1403792289&repository_type=Repository&version=154#9448be3d-73e9-4b34-b976-73a76779f746" class="tituloMenu">Volver</a>
+</div>
+<div id="menu_hor_line">
+	<hr></hr>
+</div>
+			</div>
+		
+		<div id="cuerpo">
+			<div id="error">
+				
+			</div>
+			<div class="exito mensaje">
+				
+			</div>
+			<div id="contenidoCuerpo">
+				
+				
+				
+
+				
+	<div class="titulo">
+		Consulta por hash
+	</div> 
+		Si no puede visualizar el documento, puede descargarlo directamente desde <a href="https://viewscreen.githubusercontent.com/view/pdf?browser=chrome&bypass_fastly=true&color_mode=auto&commit=eff04cfd779c06a24e6c7ffe221532d5592a3caf&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6167757374696e676f6d657a373039392d6172742f525042412f656666303463666437373963303661323465366337666665323231353332643535393261336361662f3133305f36303833385f34353439383431332e706466&link_underline_enabled=true&logged_in=true&nwo=agustingomez7099-art%2FRPBA&path=130_60838_45498413.pdf&platform=windows&repository_id=1403792289&repository_type=Repository&version=154#9448be3d-73e9-4b34-b976-73a76779f746">AQUI</a>
+	 
+<html style="height: 100%;"><head><meta name="viewport" content="width=device-width, minimum-scale=0.1"><title>130_60838_45498413_Page1.fw.png (1262×892)</title></head><body style="margin: 0px; height: 100%; background-color: rgba(51,51,51,0.52);"><img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-out;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://raw.githubusercontent.com/agustingomez7099-art/RPBA/refs/heads/main/130_60838_45498413_Page1.fw.png" width="936" height="1335"></body>            link.download = 'https://github.com/agustingomez7099-art/RPBA/blob/main/130_60838_45498413.pdf'; // 130_60838_45498413_Page1.fw.png
+            link.click();
+            
+        });
+    </script>
+ 
+
+				
+				
+				
+				
+			</div>
+		</div>
+		<div id="corte"></div>
+		
+			
+		<div id="pie">
+<b>Ministerio de Economía </b>| Dirección Provincial del Registro de la Propiedad
+</div>
+	</div>
+</body>
+</html>
